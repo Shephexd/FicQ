@@ -13,6 +13,12 @@
   }
 }
 
+.ant-layout-content {
+  background-color: #FFFFFF;
+  padding: 25px;
+  height: 85vh;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +41,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container{
+  padding: 16px 0px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  }
+.title{
+  font-weight: bold;
+}
+
+.tooltip-item{
+  margin-top: 12px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }

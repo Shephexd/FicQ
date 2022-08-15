@@ -6,11 +6,10 @@ const WordCloudPage = () => {
     const [data, setData] = useState([]);
   
     useEffect(() => {
-      if(data.length == 0)
+      if(data.length === 0)
         asyncFetch();
-    }, [data]);
+    }, []);
   
-    
     const asyncFetch = () => {
       fetch('https://7ch64e1bgc.execute-api.ap-northeast-2.amazonaws.com/dev/api/analytics/wc/topics')
         .then((response) => response.json())
